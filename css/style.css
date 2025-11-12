@@ -1,0 +1,187 @@
+/* 碳索共富｜基础样式 */
+:root{
+  --green:#2e7d32;           /* 主色 */
+  --green-dark:#1b5e20;      /* 深主色 */
+  --brown:#6d4c41;           /* 辅助棕 */
+  --accent:#f9a825;          /* 强调黄 */
+  --text:#263238;            /* 文字主色 */
+  --muted:#546e7a;           /* 次级文字 */
+  --bg:#fafdfb;              /* 背景 */
+  --card:#ffffff;            /* 卡片背景 */
+  --border:#e0e0e0;          /* 边框 */
+  --shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+
+img{max-width:100%;height:auto;display:block}
+a{color:var(--green);text-decoration:none}
+a:hover{color:var(--green-dark)}
+
+.container{width:min(1120px, 92%);margin-inline:auto}
+.section{padding:72px 0}
+.section-head{max-width:720px;margin:0 auto 28px auto;text-align:center}
+.section-head h2{margin:0 0 10px;font-size:28px}
+.section-head p{color:var(--muted);margin:0}
+
+/* 头部与导航 */
+.site-header{position:sticky;top:0;z-index:40;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{font-weight:700;color:var(--green-dark);font-size:18px}
+.site-nav{display:flex;gap:18px;align-items:center}
+.site-nav a{padding:8px 10px;border-radius:8px;color:var(--text)}
+.site-nav a:hover{background:#f1f8f4;color:var(--green-dark)}
+
+/* 汉堡菜单（移动端） */
+.nav-toggle{display:none}
+.hamburger{display:none;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:24px;height:2px;background:#37474f;margin:5px 0;transition:.3s}
+
+@media (max-width: 800px){
+  .hamburger{display:block}
+  .site-nav{position:fixed;inset:56px 0 auto 0;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.08);padding:14px 20px;display:grid;gap:6px;transform:translateY(-120%);transition:.3s}
+  .nav-toggle:checked ~ .site-nav{transform:translateY(0)}
+}
+
+/* Hero */
+.hero{padding-top:84px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.hero-text h1{font-size:34px;margin:0 0 12px}
+.hero-text p{color:var(--muted)}
+.hero-cta{display:flex;gap:12px;margin:18px 0 10px}
+.hero-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0;margin:12px 0 0;list-style:none}
+.hero-highlights li{background:#f1f8f4;border:1px solid #d7ebdc;color:#205e2a;border-radius:12px;padding:10px 12px;font-size:14px}
+.hero-media{justify-self:end}
+
+@media (max-width: 960px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-media{justify-self:center}
+  .hero-highlights{grid-template-columns:1fr}
+}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:10px;border:1px solid transparent;font-weight:600;transition:.2s}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-dark)}
+.btn-secondary{background:#e8f3ea;color:var(--green-dark);border-color:#cfe5d3}
+.btn-secondary:hover{background:#ddefe2}
+.btn-ghost{background:transparent;color:var(--green-dark);border-color:#cfe5d3}
+.btn-ghost:hover{background:#f4faf5}
+
+/* 产品卡片 */
+.products .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+.card-media{position:relative;background:linear-gradient(160deg,#f5fbf7,#ffffff 50%)}
+.card-media img{width:100%;aspect-ratio:4/3;object-fit:contain;padding:22px}
+.badge{position:absolute;left:12px;top:12px;background:var(--accent);color:#2a2a2a;padding:6px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.card-body{padding:14px}
+.card-body .meta{color:var(--muted);font-size:14px;margin:6px 0}
+.card-body .price{font-weight:700;margin:10px 0}
+.card-actions{display:flex;gap:10px}
+
+@media (max-width: 960px){
+  .products .product-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 640px){
+  .products .product-grid{grid-template-columns:1fr}
+}
+
+/* 产品详情（锚点同页显示） */
+.product-detail{display:none;margin-top:22px;background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:16px}
+.product-detail:target{display:block}
+.detail-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:18px;align-items:center}
+.kv{list-style:none;padding:0;margin:0 0 12px 0;display:grid;gap:8px}
+.kv li{display:flex;justify-content:space-between;border:1px dashed #e3e9e5;border-radius:10px;padding:8px 10px}
+.qr{display:flex;align-items:center;gap:12px}
+.qr img{width:88px;height:88px}
+.product-detail .back{margin-top:8px}
+
+@media (max-width: 800px){
+  .detail-grid{grid-template-columns:1fr}
+}
+
+/* 愿景与社会影响 */
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.impact-item{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:16px;text-align:center}
+.impact-item img{width:56px;height:56px;margin:6px auto 8px}
+.impact-item h3{margin:8px 0 6px}
+.impact-item p{color:var(--muted);margin:0}
+
+@media (max-width: 960px){
+  .impact-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width: 640px){
+  .impact-grid{grid-template-columns:1fr}
+}
+
+/* 公益参与 */
+.involved-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+.involved-card{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:16px}
+.involved-card .qr-demo{width:128px;height:128px}
+@media (max-width: 900px){
+  .involved-grid{grid-template-columns:1fr}
+}
+
+/* 联系我们 */
+.contact-form{max-width:680px;margin:0 auto}
+.form-row{display:grid;gap:6px;margin:10px 0}
+.form-row input,.form-row textarea{border:1px solid #cfd8dc;border-radius:10px;padding:12px;font:inherit}
+.form-row input:focus,.form-row textarea:focus{outline:2px solid #b2dfdb;border-color:#80cbc4}
+.form-note{color:var(--muted);font-size:12px;margin:8px 0 0}
+
+/* 页脚 */
+.site-footer{background:#0f2316;color:#cfe8d6;padding:24px 0;margin-top:20px}
+.site-footer a{color:#cfe8d6}
+.site-footer .to-top{float:right}
+
+/* 动效（简化版：加载淡入 / 悬停） */
+.reveal{opacity:0;transform:translateY(10px);animation:fadeInUp .6s ease .05s forwards}
+@keyframes fadeInUp{to{opacity:1;transform:translateY(0)}}
+
+/* ===================== 新增模块样式 ===================== */
+/* 碳汇计算 */
+.carbon-calc .calc-box{background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:18px;max-width:720px;margin:0 auto}
+.calc-row{display:grid;gap:10px;margin-bottom:12px}
+.calc-row label{font-weight:600}
+.calc-input{display:flex;align-items:center;border:1px solid #cfd8dc;border-radius:12px;overflow:hidden}
+.calc-input input{flex:1;min-width:0;border:0;padding:12px;text-align:center;font:inherit}
+.icon-btn{background:#e8f3ea;border:0;color:var(--green-dark);width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center}
+.icon-btn:hover{background:#ddefe2}
+.calc-submit{width:100%;margin-top:6px}
+.calc-result{margin-top:12px;background:#f1f8f4;border:1px solid #d7ebdc;border-radius:14px;padding:16px;text-align:center}
+.muted{color:var(--muted)}
+.big-number{font-size:clamp(32px,6vw,56px);font-weight:800;color:var(--green)}
+.badge-strong{font-weight:700;color:var(--green-dark)}
+.chip-row{display:flex;gap:8px;justify-content:center;margin-top:8px}
+.chip{background:#e8f5e9;color:#205e2a;border:1px solid #cfe5d3;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:600}
+
+/* 民族故事 */
+.story-list{display:grid;grid-template-columns:1fr;gap:16px;max-width:960px;margin:0 auto}
+.story-card{background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.story-media{position:relative;height:0;padding-top:33%}
+.story-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.story-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.0),rgba(0,0,0,.55));display:flex;align-items:flex-end}
+.story-overlay h3{color:#fff;margin:0;padding:14px 16px}
+.story-body{padding:14px 16px}
+
+/* 地图与统计 */
+.map-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:stretch}
+.map-side h3{margin:6px 0 10px}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.stat{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
+.stat-num{font-weight:800;color:#d96f17}
+.stat-label{color:var(--muted);font-size:13px}
+.map-chart{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px;min-height:260px}
+
+@media (max-width: 960px){
+  .map-grid{grid-template-columns:1fr}
+}

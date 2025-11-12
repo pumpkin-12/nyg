@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>碳索共富｜孟连牛油果——零碳认证、绿色消费</title>
+  <meta name="description" content="碳汇+农产品+民族共富：展示孟连牛油果的零碳特性、碳溯源与社会效益，倡导绿色消费与公益参与。" />
+  <meta name="keywords" content="零碳, 碳汇, 牛油果, 孟连, 民族共富, 绿色消费" />
+  <meta name="color-scheme" content="light" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <!-- 头部与导航 -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="返回首页">碳索共富</a>
+
+      <!-- 移动端汉堡复选框 -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="展开导航" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#home">首页</a>
+        <a href="#carbon-calc">碳汇计算</a>
+        <a href="#story">民族故事</a>
+        <a href="#map">碳足迹地图</a>
+        <a href="#products">产品</a>
+        <a href="#about">愿景</a>
+        <a href="#involved">公益参与</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首页/Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <h1>孟连牛油果 · 零碳认证</h1>
+          <p>
+            我们以“碳汇+农产品+民族共富”为路径，用更低碳的方式把优质牛油果带到你身边。
+            以实际行动助力生态保护、民族地区增收与可持续消费。
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#products">查看产品</a>
+            <a class="btn btn-ghost" href="#involved">了解参与方式</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>零碳认证与碳足迹可追溯</li>
+            <li>支持民族地区绿色产业</li>
+            <li>消费者参与公益与碳积分</li>
+          </ul>
+        </div>
+        <div class="hero-media reveal">
+          <img src="./assets/hero-avocado.svg" alt="牛油果与绿色生态插画" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 碳汇计算 -->
+    <section id="carbon-calc" class="section carbon-calc">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2>碳汇量累计</h2>
+          <p>输入您购买的孟连牛油果数量，生成您的个人碳汇贡献。</p>
+        </header>
+        <div class="calc-box reveal">
+          <div class="calc-row">
+            <label for="avocadoNum">购买数量（颗）</label>
+            <div class="calc-input">
+              <button id="minusBtn" class="icon-btn" aria-label="减少1"><i class="fa fa-minus"></i></button>
+              <input type="number" id="avocadoNum" min="1" value="1" />
+              <button id="plusBtn" class="icon-btn" aria-label="增加1"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+          <button id="calcBtn" class="btn btn-primary calc-submit"><i class="fa fa-calculator"></i>&nbsp;计算碳汇贡献</button>
+          <div id="carbonResult" class="calc-result" hidden>
+            <p class="muted">您的累计碳汇贡献量</p>
+            <p id="carbonValue" class="big-number">2.3 kg</p>
+            <p class="muted">相当于种植 <span id="treeEquiv" class="badge-strong">0.01</span> 棵幼树（按每棵树年固碳200kg）</p>
+            <div class="chip-row">
+              <span class="chip">生态守护</span>
+              <span class="chip">碳汇增值</span>
+              <span class="chip">乡村振兴</span>
+            </div>
+            <a href="#story" class="btn btn-secondary to-story">查看民族故事 <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 民族故事 -->
+    <section id="story" class="section story">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2>孟连民族守护故事</h2>
+          <p>牛油果林里，藏着傣族、拉祜族、佤族同胞与自然共生的智慧。</p>
+        </header>
+        <div class="story-list">
+          <article class="story-card reveal">
+            <div class="story-media">
+              <img src="https://picsum.photos/id/1059/1200/400" alt="傣族古茶树与牛油果" />
+              <div class="story-overlay"><h3>傣族·古茶树下的共生智慧</h3></div>
+            </div>
+            <div class="story-body">
+              <p>傣族村寨推广“茶果套种”模式，守护古茶园，让牛油果成为村民增收的“绿色银行”，年固碳量达3.8万吨。</p>
+            </div>
+          </article>
+          <article class="story-card reveal">
+            <div class="story-media">
+              <img src="https://picsum.photos/id/1058/1200/400" alt="拉祜族牛油果种植园" />
+              <div class="story-overlay"><h3>拉祜族·山地里的绿色革命</h3></div>
+            </div>
+            <div class="story-body">
+              <p>“拉祜姐妹种植合作社”带动周边村寨参与生态种植，减少水土流失，并通过碳汇交易实现增收。</p>
+            </div>
+          </article>
+          <article class="story-card reveal">
+            <div class="story-media">
+              <img src="https://picsum.photos/id/1057/1200/400" alt="佤族牛油果加工" />
+              <div class="story-overlay"><h3>佤族·指尖上的碳汇增值</h3></div>
+            </div>
+            <div class="story-body">
+              <p>佤族加工坊采用传统工艺提升附加值，开发多样产品，带动就业，让生态价值进一步提升。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 碳足迹地图（Chart.js） -->
+    <section id="map" class="section map">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2>碳足迹地图</h2>
+          <p>每一颗牛油果的旅程，都是一段减碳之路。</p>
+        </header>
+        <div class="map-grid">
+          <div class="map-side">
+            <h3>孟连碳汇分布</h3>
+            <p class="muted">涉及12个行政村、35个自然村，形成连片的生态碳汇林。</p>
+            <div class="stats-grid">
+              <div class="stat"><div class="stat-num">5.2万亩</div><div class="stat-label">种植总面积</div></div>
+              <div class="stat"><div class="stat-num">1.2万</div><div class="stat-label">参与农户</div></div>
+              <div class="stat"><div class="stat-num">11.5万吨</div><div class="stat-label">年固碳量</div></div>
+              <div class="stat"><div class="stat-num">42.2万吨</div><div class="stat-label">年减碳量</div></div>
+            </div>
+          </div>
+          <div class="map-chart">
+            <canvas id="carbonMapChart" aria-label="孟连县各区域碳汇分布图" role="img"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section id="products" class="section products">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2>产品展示</h2>
+          <p>精选孟连牛油果，不同规格满足你的健康消费需求，附带碳足迹与产地信息。</p>
+        </header>
+
+        <div class="product-grid">
+          <!-- 卡片 1 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="./assets/product-avocado.svg" alt="牛油果产品图" loading="lazy" />
+              <div class="badge">500g | 零碳</div>
+            </div>
+            <div class="card-body">
+              <h3>孟连牛油果（精选500g）</h3>
+              <p class="meta">产地：云南·孟连 | 碳足迹：0.8 kg CO₂e/盒</p>
+              <p class="price">参考价：¥39</p>
+              <div class="card-actions">
+                <a class="btn btn-secondary" href="#product-detail-1">了解更多</a>
+                <a class="btn btn-ghost" href="#involved">积累碳积分</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 卡片 2 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="./assets/product-avocado.svg" alt="牛油果产品图" loading="lazy" />
+              <div class="badge">1kg | 零碳</div>
+            </div>
+            <div class="card-body">
+              <h3>孟连牛油果（家庭装1kg）</h3>
+              <p class="meta">产地：云南·孟连 | 碳足迹：1.5 kg CO₂e/盒</p>
+              <p class="price">参考价：¥69</p>
+              <div class="card-actions">
+                <a class="btn btn-secondary" href="#product-detail-2">了解更多</a>
+                <a class="btn btn-ghost" href="#involved">积累碳积分</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 卡片 3 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img src="./assets/product-avocado.svg" alt="牛油果产品图" loading="lazy" />
+              <div class="badge">礼盒 | 零碳</div>
+            </div>
+            <div class="card-body">
+              <h3>孟连牛油果（礼盒装）</h3>
+              <p class="meta">产地：云南·孟连 | 碳足迹：1.2 kg CO₂e/盒</p>
+              <p class="price">参考价：¥99</p>
+              <div class="card-actions">
+                <a class="btn btn-secondary" href="#product-detail-3">了解更多</a>
+                <a class="btn btn-ghost" href="#involved">积累碳积分</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 详情锚点区：同页详情（简化，无JS） -->
+        <div id="product-detail-1" class="product-detail reveal" tabindex="-1" aria-labelledby="pd1-title">
+          <h3 id="pd1-title">孟连牛油果（精选500g）详情</h3>
+          <div class="detail-grid">
+            <img src="./assets/product-avocado.svg" alt="牛油果产品大图" />
+            <div>
+              <ul class="kv">
+                <li><strong>规格</strong><span>500g/盒</span></li>
+                <li><strong>产地</strong><span>云南·孟连</span></li>
+                <li><strong>碳足迹</strong><span>0.8 kg CO₂e/盒</span></li>
+                <li><strong>包装</strong><span>可回收纸质包装</span></li>
+                <li><strong>认证</strong><span>零碳与可持续认证</span></li>
+              </ul>
+              <div class="qr">
+                <img src="./assets/qr-placeholder.svg" alt="扫码查看碳溯源" />
+                <p>扫码查看碳溯源与产地信息</p>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-ghost back" href="#products">返回产品列表</a>
+        </div>
+
+        <div id="product-detail-2" class="product-detail reveal" tabindex="-1" aria-labelledby="pd2-title">
+          <h3 id="pd2-title">孟连牛油果（家庭装1kg）详情</h3>
+          <div class="detail-grid">
+            <img src="./assets/product-avocado.svg" alt="牛油果产品大图" />
+            <div>
+              <ul class="kv">
+                <li><strong>规格</strong><span>1kg/盒</span></li>
+                <li><strong>产地</strong><span>云南·孟连</span></li>
+                <li><strong>碳足迹</strong><span>1.5 kg CO₂e/盒</span></li>
+                <li><strong>包装</strong><span>可回收纸质包装</span></li>
+                <li><strong>认证</strong><span>零碳与可持续认证</span></li>
+              </ul>
+              <div class="qr">
+                <img src="./assets/qr-placeholder.svg" alt="扫码查看碳溯源" />
+                <p>扫码查看碳溯源与产地信息</p>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-ghost back" href="#products">返回产品列表</a>
+        </div>
+
+        <div id="product-detail-3" class="product-detail reveal" tabindex="-1" aria-labelledby="pd3-title">
+          <h3 id="pd3-title">孟连牛油果（礼盒装）详情</h3>
+          <div class="detail-grid">
+            <img src="./assets/product-avocado.svg" alt="牛油果产品大图" />
+            <div>
+              <ul class="kv">
+                <li><strong>规格</strong><span>礼盒装</span></li>
+                <li><strong>产地</strong><span>云南·孟连</span></li>
+                <li><strong>碳足迹</strong><span>1.2 kg CO₂e/盒</span></li>
+                <li><strong>包装</strong><span>可回收纸质包装</span></li>
+                <li><strong>认证</strong><span>零碳与可持续认证</span></li>
+              </ul>
+              <div class="qr">
+                <img src="./assets/qr-placeholder.svg" alt="扫码查看碳溯源" />
+                <p>扫码查看碳溯源与产地信息</p>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-ghost back" href="#products">返回产品列表</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 愿景与社会影响 -->
+    <section id="about" class="section about">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2>愿景与社会影响</h2>
+          <p>推动民族地区共同富裕，以生态优先、绿色发展为导向，提升农民收入，守护山水林田湖草。</p>
+        </header>
+        <div class="impact-grid">
+          <article class="impact-item reveal">
+            <img src="./assets/icon-eco.svg" alt="生态图标" />
+            <h3>生态保护</h3>
+            <p>以碳汇为抓手，促进植被恢复与生境改善，实现人与自然和谐共生。</p>
+          </article>
+          <article class="impact-item reveal">
+            <img src="./assets/icon-income.svg" alt="增收图标" />
+            <h3>增收共富</h3>
+            <p>通过绿色产业链与品牌化，实现民族地区农民持续增收与稳定就业。</p>
+          </article>
+          <article class="impact-item reveal">
+            <img src="./assets/icon-culture.svg" alt="文化图标" />
+            <h3>民族文化</h3>
+            <p>以产品为载体，传播民族文化与可持续理念，增强社会责任感。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 公益参与 -->
+    <section id="involved" class="section involved">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2>公益参与与碳积分</h2>
+          <p>购买产品可积累碳积分，支持生态修复、公益捐赠、民族文化传承等项目。</p>
+        </header>
+        <div class="involved-grid">
+          <div class="involved-card reveal">
+            <h3>如何参与</h3>
+            <ol>
+              <li>选购零碳牛油果，获取碳积分。</li>
+              <li>扫码查看碳溯源，了解每一分贡献。</li>
+              <li>将积分用于公益项目或绿色行动。</li>
+            </ol>
+            <a class="btn btn-primary" href="#products">开始选购（示意）</a>
+          </div>
+          <div class="involved-card reveal">
+            <h3>扫码示意</h3>
+            <img class="qr-demo" src="./assets/qr-placeholder.svg" alt="扫码示意二维码" />
+            <p>扫码即可查看产品碳足迹与产地信息（示意）。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2>联系我们</h2>
+          <p>留下你的想法或合作意向，我们将尽快与您联系。</p>
+        </header>
+        <form class="contact-form reveal" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">姓名</label>
+            <input id="name" name="name" type="text" placeholder="请输入姓名" required />
+          </div>
+          <div class="form-row">
+            <label for="email">邮箱</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">消息</label>
+            <textarea id="message" name="message" rows="4" placeholder="请输入留言..." required></textarea>
+          </div>
+          <button class="btn btn-secondary" type="submit" aria-label="提交表单（示意，无实际发送）">提交（示意）</button>
+          <p class="form-note">本页面不收集数据，按钮仅用于样式与交互示意。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 碳索共富 · 孟连牛油果 | 绿色消费 · 民族共富 · 可持续发展</p>
+      <a class="to-top" href="#top" aria-label="返回顶部">返回顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // 平滑锚点滚动并考虑固定头部高度
+    (function(){
+      const header = document.querySelector('.site-header');
+      function scrollWithOffset(target){
+        if(!target) return;
+        const headerH = header ? header.offsetHeight : 0;
+        const top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 6;
+        window.scrollTo({top, behavior:'smooth'});
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click',e=>{
+          const id = a.getAttribute('href');
+          if(id && id !== '#'){
+            const el = document.querySelector(id);
+            if(el){ e.preventDefault(); scrollWithOffset(el);} }
+        });
+      });
+    })();
+
+    // 碳汇计算交互
+    (function(){
+      const minusBtn = document.getElementById('minusBtn');
+      const plusBtn = document.getElementById('plusBtn');
+      const num = document.getElementById('avocadoNum');
+      const calcBtn = document.getElementById('calcBtn');
+      const resultBox = document.getElementById('carbonResult');
+      const carbonValue = document.getElementById('carbonValue');
+      const treeEquiv = document.getElementById('treeEquiv');
+
+      if(!num) return;
+      function setVal(v){ num.value = Math.max(1, v|0); }
+      minusBtn && minusBtn.addEventListener('click', ()=> setVal((parseInt(num.value)||1)-1));
+      plusBtn && plusBtn.addEventListener('click', ()=> setVal((parseInt(num.value)||1)+1));
+      num.addEventListener('input', ()=>{ num.value = num.value.replace(/[^0-9]/g,''); if(num.value===''||parseInt(num.value)<1) num.value=1; });
+
+      calcBtn && calcBtn.addEventListener('click', ()=>{
+        const n = parseInt(num.value)||1;
+        const carbon = (n*2.3).toFixed(1);
+        const tree = (n*2.3/200).toFixed(2);
+        carbonValue.textContent = carbon+ ' kg';
+        treeEquiv.textContent = tree;
+        resultBox.hidden = false;
+        resultBox.style.opacity = 0;
+        requestAnimationFrame(()=>{ resultBox.style.transition='opacity .4s'; resultBox.style.opacity = 1; });
+      });
+    })();
+
+    // Chart.js 环形图
+    (function(){
+      const el = document.getElementById('carbonMapChart');
+      if(!el || typeof Chart==='undefined') return;
+      const ctx = el.getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['娜允镇（35%）','勐马镇（25%）','公信乡（18%）','富岩镇（12%）','芒信镇（10%）'],
+          datasets: [{
+            label: '碳汇量占比',
+            data: [35,25,18,12,10],
+            backgroundColor: [
+              'rgba(249,115,22,.8)',
+              'rgba(249,115,22,.65)',
+              'rgba(249,115,22,.55)',
+              'rgba(249,115,22,.45)',
+              'rgba(249,115,22,.35)'
+            ],
+            borderColor: 'rgba(255,255,255,.9)',
+            borderWidth: 3,
+            hoverOffset: 10
+          }]
+        },
+        options: {
+          responsive:true,
+          maintainAspectRatio:false,
+          cutout: window.innerWidth < 768 ? '45%' : '55%',
+          plugins:{
+            legend:{ position:'bottom' },
+            title:{ display:true, text:'孟连县各区域碳汇分布' }
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
