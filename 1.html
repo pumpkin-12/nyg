@@ -1,0 +1,2382 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>家乡牛油果 - 营养与美味的完美结合</title>
+    <script src="https://res.gemcoder.com/js/reload.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              avocado: {
+                light: '#AED581',
+                DEFAULT: '#8BC34A',
+                dark: '#689F38',
+                darker: '#558B2F',
+                accent: '#7CB342'
+              },
+              earth: {
+                light: '#D7CCC8',
+                DEFAULT: '#A1887F',
+                dark: '#6D4C41'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Georgia', 'Cambria', 'serif']
+            },
+            spacing: {
+              '128': '32rem'
+            }
+          }
+        }
+      };
+    </script>
+    <style type="text/tailwindcss">
+          @layer utilities {
+        .text-shadow {
+          text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .text-shadow-lg {
+          text-shadow: 0 4px 8px rgba(0,0,0,0.25);
+        }
+        .transition-custom {
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bg-blur {
+          backdrop-filter: blur(8px);
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-50">
+    <!-- [MODULE] a1b_导航栏 -->
+    <header
+      class="fixed w-full z-50 transition-custom bg-transparent"
+      id="navbar"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <i class="fas fa-seedling text-avocado text-2xl mr-2"> </i>
+            <span class="text-xl font-bold text-white text-shadow-lg">
+              家乡牛油果
+            </span>
+          </div>
+          <!-- 桌面导航 -->
+          <nav class="hidden md:flex space-x-8">
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#overview"
+            >
+              概述
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#carbon-calc"
+            >
+              碳汇计算
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#features"
+            >
+              特点
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#ethnic-prosperity"
+            >
+              民族共富
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#story"
+            >
+              民族故事
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#nutrition"
+            >
+              营养价值
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#carbon-map"
+            >
+              碳足迹地图
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#recipes"
+            >
+              食谱
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#products"
+            >
+              产品
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#gallery"
+            >
+              图片展示
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#involved"
+            >
+              公益参与
+            </a>
+            <a
+              class="text-white hover:text-avocado-light transition-custom font-medium"
+              href="#contact"
+            >
+              联系我们
+            </a>
+          </nav>
+          <!-- 移动端菜单按钮 -->
+          <button
+            class="md:hidden text-white focus:outline-none"
+            id="menu-toggle"
+          >
+            <i class="fas fa-bars text-xl"> </i>
+          </button>
+        </div>
+      </div>
+      <!-- 移动端导航菜单 -->
+      <div
+        class="hidden md:hidden bg-white shadow-lg absolute w-full"
+        id="mobile-menu"
+      >
+        <div class="container mx-auto px-4 py-3 space-y-3">
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#overview"
+          >
+            概述
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#carbon-calc"
+          >
+            碳汇计算
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#features"
+          >
+            特点
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#ethnic-prosperity"
+          >
+            民族共富
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#story"
+          >
+            民族故事
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#nutrition"
+          >
+            营养价值
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#carbon-map"
+          >
+            碳足迹地图
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#recipes"
+          >
+            食谱
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#products"
+          >
+            产品
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#gallery"
+          >
+            图片展示
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#involved"
+          >
+            公益参与
+          </a>
+          <a
+            class="block py-2 text-gray-800 hover:text-avocado transition-custom"
+            href="#contact"
+          >
+            联系我们
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- [/MODULE] a1b_导航栏 -- 包含网站标题和导航链接，支持移动端响应式菜单 -->
+    <!-- [MODULE] c3d_英雄区域 -->
+    <section
+      class="relative h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          alt="牛油果背景"
+          class="w-full h-full object-cover"
+          src="https://design.gemcoder.com/staticResource/echoAiSystemImages/4422a7264ac020fb8c4cfd5f97e100a2.png"
+        />
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+      </div>
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+      >
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 text-shadow-lg animate-fade-in"
+        >
+          碳索共富 · 孟连牛油果
+          <br />
+          让每一颗“绿色黄金”看得见价值
+        </h1>
+        <p
+          class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto text-shadow"
+        >
+          来自云南孟连“中国牛油果之乡”的高端牛油果，一颗果固碳、多方共受益，让生态、农户与消费者共享一片“绿色黄金”。
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            class="bg-avocado hover:bg-avocado-dark text-white font-medium py-3 px-8 rounded-full transition-custom transform hover:scale-105 shadow-lg"
+            href="#overview"
+          >
+            了解更多
+          </a>
+          <a
+            class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-avocado-dark font-medium py-3 px-8 rounded-full transition-custom transform hover:scale-105"
+            href="#contact"
+          >
+            联系我们
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce"
+      >
+        <a class="text-white text-2xl" href="#overview">
+          <i class="fas fa-chevron-down"> </i>
+        </a>
+      </div>
+    </section>
+    <!-- [/MODULE] c3d_英雄区域 -- 展示牛油果主题背景图片和主要宣传文字，包含了解更多和联系我们按钮 -->
+    <main>
+      <!-- [MODULE] e5f_概述部分 -->
+      <section class="py-20 bg-white" id="overview">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              牛油果概述
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto"></div>
+          </div>
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+              <img
+                alt="牛油果特写"
+                class="w-full h-auto rounded-lg shadow-xl transform hover:scale-[1.02] transition-custom"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0a9cb9d763b46db6f18dade8a06cf4f3.png"
+              />
+            </div>
+            <div class="lg:w-1/2">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                我们家乡的牛油果故事
+              </h3>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                本项目立足云南省普洱市孟连傣族拉祜族佤族自治县（以下简称"云南孟连县"），这里位于北纬22°黄金牛油果产区，与世界著名牛油果产区墨西哥、秘鲁在同一黄金纬度带上。种植区海拔在1000～1300米之间，昼夜温差大，有利于糖分和健康脂肪的积累，风味更浓郁。孟连日照充足、雨量适中、土壤肥沃，且工业污染极少，为生产绿色、有机的优质牛油果提供了理想环境。
+              </p>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                孟连牛油果是全中国本土出产的、品质可比肩世界顶级产区的"国产高端牛油果"，是北回归线上罕见的"绿色黄金"。孟连县位于云南省普洱市，被誉为"中国牛油果之乡"，是中国最大的牛油果种植基地，种植面积超过12万亩，鲜果产量占国产牛油果的80%以上，替代15%进口，亩收6000元。因此，本项目并非单一的种植项目，而是以牛油果为载体，探索"碳汇+农产品+民族共富"三位一体的发展路径。
+              </p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+                <div
+                  class="text-center p-4 bg-gray-50 rounded-lg transform transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                >
+                  <i class="fas fa-balance-scale text-avocado text-2xl mb-2">
+                  </i>
+                  <p class="text-gray-700 font-medium">低糖高钾</p>
+                </div>
+                <div
+                  class="text-center p-4 bg-gray-50 rounded-lg transform transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                >
+                  <i class="fas fa-utensils text-avocado text-2xl mb-2"> </i>
+                  <p class="text-gray-700 font-medium">即食无纤维</p>
+                </div>
+                <div
+                  class="text-center p-4 bg-gray-50 rounded-lg transform transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                >
+                  <i class="fas fa-link text-avocado text-2xl mb-2"> </i>
+                  <p class="text-gray-700 font-medium">区块链溯源</p>
+                </div>
+                <div
+                  class="text-center p-4 bg-gray-50 rounded-lg transform transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                >
+                  <i class="fas fa-percentage text-avocado text-2xl mb-2"> </i>
+                  <p class="text-gray-700 font-medium">高干物质</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] e5f_概述部分 -- 介绍云南孟连牛油果的产区背景、发展成就和产品特点，包含低糖高钾、即食无纤维、区块链溯源和高干物质四个核心优势 -->
+      <!-- [MODULE] a7g_碳汇增绿 -->
+      <section class="py-20 bg-gray-50" id="carbon-sink">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              碳汇增绿：可监测的生态价值
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto"></div>
+          </div>
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 order-2 lg:order-1">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                牛油果林的生态固碳价值
+              </h3>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                碳汇增绿是长远发展的根基。探索碳汇交易，是为产业注入持续发展的动力，也是响应"双碳"目标的具体行动。刘世荣（2024）认为在碳减排效应上，森林碳汇被公认为是减缓大气CO₂浓度上升和全球气候变暖最经济、最现实、综合效益最好的手段。
+              </p>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                史代敏（2022）指出可通过绿色金融提供资金支持、降低融资成本等方式，对森林碳汇的开发和推广起到调节作用；石柳（2025）提出要建立和完善森林碳汇跨区域生态补偿机制。
+              </p>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                牛油果林本身具有固碳的生态功能。通过培育牛油果林，不仅使得牛油果林的生态固碳能力转化为可交易的经济价值，还能提升生态系统固碳能力，将大气中的二氧化碳固定在植被与土壤中，实现生态环境绿化改善的双重目标。这是"绿水青山就是金山银山"理念的重要实践路径。通过建立"碳汇+农产品"一体化监测与认证体系，孟连牛油果林的固碳能力不再停留在生态指标，而是转化为可计量、可交易、可共享的绿色资产。
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <div
+                  class="flex-1 bg-white p-6 rounded-lg shadow-sm transform transition-all duration-300 hover:shadow-md"
+                >
+                  <div class="flex items-center mb-3">
+                    <i class="fas fa-tree text-avocado text-xl mr-3"> </i>
+                    <h4 class="font-semibold text-gray-800">生态固碳</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    将大气中的二氧化碳固定在植被与土壤中，提升生态系统固碳能力
+                  </p>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-lg shadow-sm transform transition-all duration-300 hover:shadow-md"
+                >
+                  <div class="flex items-center mb-3">
+                    <i class="fas fa-exchange-alt text-avocado text-xl mr-3">
+                    </i>
+                    <h4 class="font-semibold text-gray-800">碳汇交易</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    将生态固碳能力转化为可交易的经济价值，为产业注入持续发展动力
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 order-1 lg:order-2">
+              <img
+                alt="牛油果林碳汇"
+                class="w-full h-auto rounded-lg shadow-xl transform hover:scale-[1.02] transition-custom"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/8ca7e50165f775d96d9370914df0fe72.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] a7g_碳汇增绿 -- 介绍牛油果林的碳汇增绿价值，包括生态固碳功能、碳汇交易潜力，以及如何响应"双碳"目标 -->
+      <section class="py-20 bg-white" id="carbon-calc">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              碳汇量累计
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              输入您购买的孟连牛油果数量，生成个人碳汇贡献，直观感受每一次选择带来的减碳价值。
+            </p>
+          </div>
+          <div class="max-w-2xl mx-auto bg-gray-50 rounded-2xl shadow-lg p-6 sm:p-8">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-6">
+              <div class="flex-1">
+                <label for="avocadoNum" class="block text-sm font-medium text-gray-700 mb-2">
+                  购买数量（颗）
+                </label>
+                <div class="flex items-center bg-white rounded-full border border-gray-200 shadow-sm overflow-hidden">
+                  <button
+                    id="minusBtn"
+                    type="button"
+                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-avocado-dark hover:bg-gray-50 transition-custom"
+                    aria-label="减少1"
+                  >
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input
+                    id="avocadoNum"
+                    type="number"
+                    min="1"
+                    value="1"
+                    class="flex-1 text-center border-l border-r border-gray-100 py-2 focus:outline-none focus:ring-0"
+                  />
+                  <button
+                    id="plusBtn"
+                    type="button"
+                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-avocado-dark hover:bg-gray-50 transition-custom"
+                    aria-label="增加1"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="sm:w-40 flex sm:justify-end">
+                <button
+                  id="calcBtn"
+                  type="button"
+                  class="w-full sm:w-auto bg-avocado hover:bg-avocado-dark text-white font-medium py-3 px-6 rounded-full transition-custom flex items-center justify-center shadow-md"
+                >
+                  <i class="fas fa-calculator mr-2"></i>
+                  计算碳汇贡献
+                </button>
+              </div>
+            </div>
+            <div id="carbonResult" class="mt-4 rounded-xl bg-white border border-avocado/30 px-6 py-5 space-y-3 hidden">
+              <p class="text-sm text-gray-500">您的累计碳汇贡献量</p>
+              <p id="carbonValue" class="text-4xl font-bold text-avocado-dark tracking-tight">2.3 kg</p>
+              <p class="text-sm text-gray-600">
+                相当于种植
+                <span id="treeEquiv" class="font-semibold text-avocado-dark">0.01</span>
+                棵幼树（按每棵树年固碳200kg计）。
+              </p>
+              <div class="flex flex-wrap gap-2 mt-2">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-avocado/10 text-avocado-dark">
+                  生态守护
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-avocado/10 text-avocado-dark">
+                  碳汇增值
+                </span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-avocado/10 text-avocado-dark">
+                  乡村振兴
+                </span>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="#ethnic-prosperity"
+                  class="inline-flex items-center text-sm font-medium text-avocado-dark hover:text-avocado"
+                >
+                  查看民族共富故事
+                  <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [MODULE] g7h_特点部分 -->
+      <section class="py-20 bg-gray-50" id="features">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              牛油果特点
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              我们家乡的牛油果具有独特的品质和特点，使其在众多品种中脱颖而出
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 特点卡片1 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-custom"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  alt="细腻口感"
+                  class="w-full h-full object-cover"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/cfa4b365087810b4956d9c222958a188.png"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-12 h-12 bg-avocado-light rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-utensils text-white text-xl"> </i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                  细腻口感
+                </h3>
+                <p class="text-gray-600">
+                  我们的牛油果果肉细腻柔滑，质地如奶油般顺滑，入口即化，给您带来独特的味觉享受。
+                </p>
+              </div>
+            </div>
+            <!-- 特点卡片2 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-custom"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  alt="浓郁香气"
+                  class="w-full h-full object-cover"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/c3ca61c420e4e0e6913f8cc72dd603ca.png"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-12 h-12 bg-avocado-light rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-smile text-white text-xl"> </i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                  浓郁香气
+                </h3>
+                <p class="text-gray-600">
+                  成熟的牛油果散发出淡淡的坚果香气，清新自然，让人垂涎欲滴，是其他水果无法比拟的。
+                </p>
+              </div>
+            </div>
+            <!-- 特点卡片3 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-custom"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  alt="理想成熟度"
+                  class="w-full h-full object-cover"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/5325584f8e4a9f31c502694851d2e64b.png"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-12 h-12 bg-avocado-light rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-clock text-white text-xl"> </i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                  理想成熟度
+                </h3>
+                <p class="text-gray-600">
+                  我们严格控制采摘时间，确保每一颗牛油果都达到理想的成熟度，既不过生也不过熟。
+                </p>
+              </div>
+            </div>
+            <!-- 特点卡片4 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-custom"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  alt="高油含量"
+                  class="w-full h-full object-cover"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/fbf36e410247c6ff42ea4377eb0e80f6.png"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-12 h-12 bg-avocado-light rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-oil-can text-white text-xl"> </i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                  高油含量
+                </h3>
+                <p class="text-gray-600">
+                  家乡牛油果含有丰富的健康油脂，这是其奶油质地和丰富营养的关键，也是其独特风味的来源。
+                </p>
+              </div>
+            </div>
+            <!-- 特点卡片5 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-custom"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  alt="有机种植"
+                  class="w-full h-full object-cover"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/7eb9c320be79948b8e6af9c62a159e0e.png"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-12 h-12 bg-avocado-light rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-recycle text-white text-xl"> </i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                  有机种植
+                </h3>
+                <p class="text-gray-600">
+                  我们坚持有机种植理念，不使用化学农药和肥料，采用可持续农业方式种植，在守护生态的同时守护消费者健康。
+                </p>
+              </div>
+            </div>
+            <!-- 特点卡片6 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-custom"
+            >
+              <div class="h-48 overflow-hidden">
+                <img
+                  alt="新鲜采摘"
+                  class="w-full h-full object-cover"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/34c5a95bfdf07b4eea9ea46eeeb35367.png"
+                />
+              </div>
+              <div class="p-6">
+                <div
+                  class="w-12 h-12 bg-avocado-light rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-calendar-check text-white text-xl"> </i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                  新鲜采摘
+                </h3>
+                <p class="text-gray-600">
+                  从采摘到送达消费者手中，我们控制整个供应链，确保牛油果的新鲜度和品质不受影响。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] g7h_特点部分 -- 展示家乡牛油果的六个主要特点：细腻口感、浓郁香气、理想成熟度、高油含量、有机种植和新鲜采摘 -->
+      <!-- [MODULE] b8h_民族共富 -->
+      <section class="py-20 bg-white" id="ethnic-prosperity">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              民族共富：可分享的社会价值
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto"></div>
+          </div>
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+              <img
+                alt="少数民族群众种植牛油果"
+                class="w-full h-auto rounded-lg shadow-xl transform hover:scale-[1.02] transition-custom"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/b86fc9c73492cffd3a3d97b0c5420e0c.png"
+              />
+            </div>
+            <div class="lg:w-1/2">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                "334"利益联结机制下的民族共富实践
+              </h3>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                民族共富是产业发展的出发点和落脚点。2024年9月，习近平总书记在全国民族团结进步表彰大会上的讲话中，再次强调要"加快民族地区高质量发展，扎实推进各民族共同富裕"。杨玉文（2024）指出边疆地区是实现共同富裕的关键一环，对推进中华民族共同体建设具有重大意义。项目通过把农户从"原料提供者"转变为"生态股东"和"产业合伙人"，实现从外部"输血"向内部"造血"的根本转变。
+              </p>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                孟连县项目开展在于基于2024年当地政府创新的334利益联结机制，以及党建引领与基层动员，能确保产业发展能真正惠及当地少数民族群众。通过创新的利益联结机制，确保少数民族农户能稳定分享产业发展的红利。
+              </p>
+              <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                  <i class="fas fa-handshake text-avocado mr-2"> </i>
+                  334利益联结机制
+                </h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-avocado mt-1 mr-2"> </i>
+                    <span> 30%收益用于牛油果产业持续发展 </span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-avocado mt-1 mr-2"> </i>
+                    <span> 30%收益用于村集体经济积累 </span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-avocado mt-1 mr-2"> </i>
+                    <span> 40%收益直接分配给参与农户 </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-avocado/10 p-4 rounded-lg text-center">
+                  <p class="text-3xl font-bold text-avocado-dark">3000+</p>
+                  <p class="text-gray-700">户均年增收(元)</p>
+                </div>
+                <div class="bg-avocado/10 p-4 rounded-lg text-center">
+                  <p class="text-3xl font-bold text-avocado-dark">100%</p>
+                  <p class="text-gray-700">少数民族参与率</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] b8h_民族共富 -- 介绍牛油果产业如何促进民族共富，包括334利益联结机制、农户增收情况，以及如何实现各民族共同富裕的目标 -->
+      <section class="py-20 bg-gray-50" id="story">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              孟连民族守护故事
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              在牛油果林里，傣族、拉祜族、佤族同胞用各自的方式守护家园，把绿色变成增收的新路径。
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div class="relative h-56 overflow-hidden">
+                <img
+                  src="https://picsum.photos/id/1059/1200/400"
+                  alt="傣族古茶树与牛油果"
+                  class="w-full h-full object-cover transform hover:scale-110 transition-custom duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex items-end">
+                  <h3 class="text-white text-lg font-semibold px-4 pb-3">
+                    傣族 · 古茶树下的共生智慧
+                  </h3>
+                </div>
+              </div>
+              <div class="p-5 flex-1 flex items-center">
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  在娜允镇的傣族村寨，清晨的薄雾刚刚散去，古茶树下已经飘出淡淡茶香。村民在“茶果套种”模式下，将牛油果栽进几十年的古茶园，让深根系牢牢抓住山体。茶与果共同生长，年固碳量累计达3.8万吨，不仅守护了古茶园的生态安全，也让一代又一代傣族家庭多了一份稳定的“绿色收入”。
+                </p>
+              </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div class="relative h-56 overflow-hidden">
+                <img
+                  src="https://picsum.photos/id/1058/1200/400"
+                  alt="拉祜族牛油果种植园"
+                  class="w-full h-full object-cover transform hover:scale-110 transition-custom duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex items-end">
+                  <h3 class="text-white text-lg font-semibold px-4 pb-3">
+                    拉祜族 · 山地里的绿色革命
+                  </h3>
+                </div>
+              </div>
+              <div class="p-5 flex-1 flex items-center">
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  在海拔超过一千米的山坡上，“拉祜姐妹种植合作社”把分散的小块坡地连成整片生态牛油果林。她们统一改用有机肥、等高种植和覆盖作物，山体水土流失明显减少，昔日贫瘠的坡地变成稳稳“生利”的绿色资产。通过参与碳汇项目和收益分配机制，合作社成员人均增收数千元，年轻人也愿意留下来，把家乡当作真正的“希望田野”。
+                </p>
+              </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div class="relative h-56 overflow-hidden">
+                <img
+                  src="https://picsum.photos/id/1057/1200/400"
+                  alt="佤族牛油果加工"
+                  class="w-full h-full object-cover transform hover:scale-110 transition-custom duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex items-end">
+                  <h3 class="text-white text-lg font-semibold px-4 pb-3">
+                    佤族 · 指尖上的碳汇增值
+                  </h3>
+                </div>
+              </div>
+              <div class="p-5 flex-1 flex items-center">
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  在佤族村寨的小型加工坊里，牛油果被制成手工冷榨油、营养抹酱和手工皂，木桌上整齐摆放着一瓶瓶标注产地和碳汇信息的成品。许多曾在外务工的年轻人回到家乡，在“指尖技艺”中完成牛油果的二次增值。一颗果实，从山坡种植到加工车间，不仅创造了更多就业岗位，也让碳汇收益以更灵活的方式回流到每一个佤族家庭。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- [MODULE] i9j_营养价值部分 -->
+      <section class="py-20 bg-white" id="nutrition">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              营养价值
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              牛油果被誉为"超级食物"，富含多种对人体健康有益的营养成分
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-12 items-center">
+            <div class="lg:w-1/2">
+              <div class="grid grid-cols-2 gap-6">
+                <!-- 营养成分卡片1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-avocado/10 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <i class="fas fa-heartbeat text-avocado"> </i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">健康脂肪</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    富含单不饱和脂肪酸，有助于降低胆固醇，保护心血管健康
+                  </p>
+                </div>
+                <!-- 营养成分卡片2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-avocado/10 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <i class="fas fa-vitamin text-avocado"> </i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">维生素K</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    促进血液凝固和骨骼健康，有助于预防骨质疏松症
+                  </p>
+                </div>
+                <!-- 营养成分卡片3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-avocado/10 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <i class="fas fa-eye text-avocado"> </i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">叶黄素</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    保护眼睛健康，降低年龄相关性黄斑变性的风险
+                  </p>
+                </div>
+                <!-- 营养成分卡片4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-avocado/10 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <i class="fas fa-brain text-avocado"> </i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">叶酸</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    对胎儿神经系统发育至关重要，有助于预防出生缺陷
+                  </p>
+                </div>
+                <!-- 营养成分卡片5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-avocado/10 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <i class="fas fa-shield-alt text-avocado"> </i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">维生素C</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    增强免疫系统，促进胶原蛋白合成，抗氧化保护细胞
+                  </p>
+                </div>
+                <!-- 营养成分卡片6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-avocado/10 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <i class="fas fa-bone text-avocado"> </i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">钾</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm">
+                    维持正常心跳和血压，调节体内水分平衡
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mt-8 bg-avocado/5 p-6 rounded-lg border-l-4 border-avocado"
+              >
+                <h4 class="font-semibold text-gray-800 mb-2">健康小贴士</h4>
+                <p class="text-gray-700">
+                  牛油果虽然热量较高，但富含健康脂肪，适量食用有助于控制食欲，促进新陈代谢。建议每天食用半个到一个牛油果，配合均衡饮食，获得最佳健康效果。
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">
+                  牛油果营养成分表
+                </h3>
+                <div class="w-full h-80" id="nutrition-chart"></div>
+                <div
+                  class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+                >
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="text-sm text-gray-500 mb-1">热量</p>
+                    <p class="text-xl font-bold text-avocado-dark">160</p>
+                    <p class="text-xs text-gray-500">kcal</p>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="text-sm text-gray-500 mb-1">脂肪</p>
+                    <p class="text-xl font-bold text-avocado-dark">14.7g</p>
+                    <p class="text-xs text-gray-500">总脂肪</p>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="text-sm text-gray-500 mb-1">碳水</p>
+                    <p class="text-xl font-bold text-avocado-dark">8.5g</p>
+                    <p class="text-xs text-gray-500">净碳水</p>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded-lg">
+                    <p class="text-sm text-gray-500 mb-1">纤维</p>
+                    <p class="text-xl font-bold text-avocado-dark">6.7g</p>
+                    <p class="text-xs text-gray-500">膳食纤维</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] i9j_营养价值部分 -- 展示牛油果的主要营养成分和健康益处，包含营养成分图表和健康小贴士 -->
+      <section class="py-20 bg-gray-50" id="carbon-map">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              碳足迹地图
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              孟连县不同区域的牛油果碳汇分布，让每一颗“绿色黄金”的旅程都清晰可见。
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                孟连碳汇分布概览
+              </h3>
+              <p class="text-gray-600 mb-6">
+                涉及多个乡镇和行政村，形成连片的生态碳汇林，既是边疆生态安全屏障，也是民族共富的重要支撑。
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl shadow-sm p-4">
+                  <p class="text-sm text-gray-500 mb-1">种植总面积</p>
+                  <p class="text-2xl font-bold text-avocado-dark">5.2万亩</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-4">
+                  <p class="text-sm text-gray-500 mb-1">参与农户</p>
+                  <p class="text-2xl font-bold text-avocado-dark">1.2万户</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-4">
+                  <p class="text-sm text-gray-500 mb-1">年固碳量</p>
+                  <p class="text-2xl font-bold text-avocado-dark">11.5万吨</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-4">
+                  <p class="text-sm text-gray-500 mb-1">年减碳量</p>
+                  <p class="text-2xl font-bold text-avocado-dark">42.2万吨</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-4 h-80 md:h-96 flex items-center justify-center">
+              <canvas
+                id="carbonMapChart"
+                aria-label="孟连县各区域碳汇分布图"
+                role="img"
+                class="w-full h-full"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [MODULE] k2l_食谱部分 -->
+      <section class="py-20 bg-gray-50" id="recipes">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              牛油果食谱
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              探索美味又健康的牛油果食谱，为您的餐桌增添营养与风味
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 食谱卡片1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+              <div class="h-56 overflow-hidden">
+                <img
+                  alt="牛油果吐司"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-custom duration-500"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/94164ebda02f232479fe09000d999822.png"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  经典牛油果吐司
+                </h3>
+                <div class="flex items-center text-yellow-400 mb-4">
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star-half-alt"> </i>
+                  <span class="text-gray-600 ml-2 text-sm"> (4.5) </span>
+                </div>
+                <p class="text-gray-600 mb-4 text-sm">
+                  简单又美味的早餐选择，搭配全麦面包和牛油果，健康又饱腹。
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-500">
+                    <i class="far fa-clock mr-1"> </i>
+                    10分钟
+                  </span>
+                  <button
+                    class="recipe-btn bg-avocado hover:bg-avocado-dark text-white text-sm font-medium py-2 px-4 rounded-full transition-custom"
+                    data-recipe="toast"
+                  >
+                    查看食谱
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 食谱卡片2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+              <div class="h-56 overflow-hidden">
+                <img
+                  alt="牛油果沙拉"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-custom duration-500"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/c199bf4ad81b9c495d6fc2a23636d63d.png"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  牛油果沙拉
+                </h3>
+                <div class="flex items-center text-yellow-400 mb-4">
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <span class="text-gray-600 ml-2 text-sm"> (5.0) </span>
+                </div>
+                <p class="text-gray-600 mb-4 text-sm">
+                  清爽健康的沙拉，牛油果与新鲜蔬菜完美搭配，营养均衡。
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-500">
+                    <i class="far fa-clock mr-1"> </i>
+                    15分钟
+                  </span>
+                  <button
+                    class="recipe-btn bg-avocado hover:bg-avocado-dark text-white text-sm font-medium py-2 px-4 rounded-full transition-custom"
+                    data-recipe="salad"
+                  >
+                    查看食谱
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 食谱卡片3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+              <div class="h-56 overflow-hidden">
+                <img
+                  alt="牛油果奶昔"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-custom duration-500"
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/8e9087d0edcfd5a21c621f2d0e800836.png"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  牛油果奶昔
+                </h3>
+                <div class="flex items-center text-yellow-400 mb-4">
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="far fa-star"> </i>
+                  <span class="text-gray-600 ml-2 text-sm"> (4.0) </span>
+                </div>
+                <p class="text-gray-600 mb-4 text-sm">
+                  顺滑营养的奶昔，适合早餐或运动后补充能量，口感丰富。
+                </p>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-500">
+                    <i class="far fa-clock mr-1"> </i>
+                    5分钟
+                  </span>
+                  <button
+                    class="recipe-btn bg-avocado hover:bg-avocado-dark text-white text-sm font-medium py-2 px-4 rounded-full transition-custom"
+                    data-recipe="smoothie"
+                  >
+                    查看食谱
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] k2l_食谱部分 -- 展示三种牛油果食谱：经典牛油果吐司、牛油果沙拉和牛油果奶昔，包含查看食谱按钮 -->
+      <section class="py-20 bg-gray-50" id="products">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              产品展示
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              精选孟连牛油果，不同规格满足你的健康消费需求，每一盒都附带碳足迹与产地信息。
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div class="relative h-56 bg-avocado/5 flex items-center justify-center">
+                <img
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0a9cb9d763b46db6f18dade8a06cf4f3.png"
+                  alt="孟连牛油果产品图"
+                  class="w-full h-full object-cover"
+                />
+                <span class="absolute top-4 left-4 bg-avocado text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  500g | 零碳
+                </span>
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  孟连牛油果（精选500g）
+                </h3>
+                <p class="text-sm text-gray-500 mb-1">产地：云南·孟连</p>
+                <p class="text-sm text-gray-500 mb-3">碳足迹：0.8 kg CO₂e/盒</p>
+                <p class="text-avocado-dark font-bold mb-4">参考价：¥39</p>
+                <div class="mt-auto flex items-center justify-between gap-3">
+                  <a href="#product-detail-1" class="text-sm font-medium text-avocado-dark hover:text-avocado">
+                    了解更多
+                  </a>
+                  <a href="#involved" class="text-xs text-gray-500 hover:text-gray-700">
+                    积累碳积分
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div class="relative h-56 bg-avocado/5 flex items-center justify-center">
+                <img
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0a9cb9d763b46db6f18dade8a06cf4f3.png"
+                  alt="孟连牛油果产品图"
+                  class="w-full h-full object-cover"
+                />
+                <span class="absolute top-4 left-4 bg-avocado text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  1kg | 零碳
+                </span>
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  孟连牛油果（家庭装1kg）
+                </h3>
+                <p class="text-sm text-gray-500 mb-1">产地：云南·孟连</p>
+                <p class="text-sm text-gray-500 mb-3">碳足迹：1.5 kg CO₂e/盒</p>
+                <p class="text-avocado-dark font-bold mb-4">参考价：¥69</p>
+                <div class="mt-auto flex items-center justify-between gap-3">
+                  <a href="#product-detail-2" class="text-sm font-medium text-avocado-dark hover:text-avocado">
+                    了解更多
+                  </a>
+                  <a href="#involved" class="text-xs text-gray-500 hover:text-gray-700">
+                    积累碳积分
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+              <div class="relative h-56 bg-avocado/5 flex items-center justify-center">
+                <img
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0a9cb9d763b46db6f18dade8a06cf4f3.png"
+                  alt="孟连牛油果礼盒图"
+                  class="w-full h-full object-cover"
+                />
+                <span class="absolute top-4 left-4 bg-avocado text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  礼盒 | 零碳
+                </span>
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                  孟连牛油果（礼盒装）
+                </h3>
+                <p class="text-sm text-gray-500 mb-1">产地：云南·孟连</p>
+                <p class="text-sm text-gray-500 mb-3">碳足迹：1.2 kg CO₂e/盒</p>
+                <p class="text-avocado-dark font-bold mb-4">参考价：¥99</p>
+                <div class="mt-auto flex items-center justify-between gap-3">
+                  <a href="#product-detail-3" class="text-sm font-medium text-avocado-dark hover:text-avocado">
+                    了解更多
+                  </a>
+                  <a href="#involved" class="text-xs text-gray-500 hover:text-gray-700">
+                    积累碳积分
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="mt-16 space-y-10">
+            <div id="product-detail-1" class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                孟连牛油果（精选500g）详情
+              </h3>
+              <div class="grid md:grid-cols-2 gap-8 items-start">
+                <img
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0a9cb9d763b46db6f18dade8a06cf4f3.png"
+                  alt="孟连牛油果产品大图"
+                  class="w-full rounded-xl shadow"
+                />
+                <div>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">规格</span>
+                      <span>500g/盒</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">产地</span>
+                      <span>云南·孟连</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">碳足迹</span>
+                      <span>0.8 kg CO₂e/盒</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">包装</span>
+                      <span>可回收纸质包装</span>
+                    </li>
+                    <li class="flex justify-between pb-2">
+                      <span class="font-medium">认证</span>
+                      <span>零碳与可持续认证</span>
+                    </li>
+                  </ul>
+                  <div class="mt-4 flex items-center gap-4">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="https://design.gemcoder.com/staticResource/echoAiSystemImages/39bf7929dcbd83f0f8516d888f4b7acd.png"
+                        alt="扫码查看碳溯源"
+                        class="w-20 h-20 rounded-lg object-cover"
+                      />
+                      <p class="text-xs text-gray-600 max-w-[12rem]">
+                        扫码即可查看碳溯源与产地信息示意，了解每一盒牛油果的绿色旅程。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product-detail-2" class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                孟连牛油果（家庭装1kg）详情
+              </h3>
+              <div class="grid md:grid-cols-2 gap-8 items-start">
+                <img
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0a9cb9d763b46db6f18dade8a06cf4f3.png"
+                  alt="孟连牛油果产品大图"
+                  class="w-full rounded-xl shadow"
+                />
+                <div>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">规格</span>
+                      <span>1kg/盒</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">产地</span>
+                      <span>云南·孟连</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">碳足迹</span>
+                      <span>1.5 kg CO₂e/盒</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">包装</span>
+                      <span>可回收纸质包装</span>
+                    </li>
+                    <li class="flex justify-between pb-2">
+                      <span class="font-medium">认证</span>
+                      <span>零碳与可持续认证</span>
+                    </li>
+                  </ul>
+                  <div class="mt-4 flex items-center gap-4">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="https://design.gemcoder.com/staticResource/echoAiSystemImages/39bf7929dcbd83f0f8516d888f4b7acd.png"
+                        alt="扫码查看碳溯源"
+                        class="w-20 h-20 rounded-lg object-cover"
+                      />
+                      <p class="text-xs text-gray-600 max-w-[12rem]">
+                        扫码查看家庭装牛油果的碳足迹与产地信息示意。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product-detail-3" class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                孟连牛油果（礼盒装）详情
+              </h3>
+              <div class="grid md:grid-cols-2 gap-8 items-start">
+                <img
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0a9cb9d763b46db6f18dade8a06cf4f3.png"
+                  alt="孟连牛油果礼盒图"
+                  class="w-full rounded-xl shadow"
+                />
+                <div>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">规格</span>
+                      <span>礼盒装</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">产地</span>
+                      <span>云南·孟连</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">碳足迹</span>
+                      <span>1.2 kg CO₂e/盒</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                      <span class="font-medium">包装</span>
+                      <span>可回收纸质包装</span>
+                    </li>
+                    <li class="flex justify-between pb-2">
+                      <span class="font-medium">认证</span>
+                      <span>零碳与可持续认证</span>
+                    </li>
+                  </ul>
+                  <div class="mt-4 flex items-center gap-4">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="https://design.gemcoder.com/staticResource/echoAiSystemImages/39bf7929dcbd83f0f8516d888f4b7acd.png"
+                        alt="扫码查看碳溯源"
+                        class="w-20 h-20 rounded-lg object-cover"
+                      />
+                      <p class="text-xs text-gray-600 max-w-[12rem]">
+                        礼盒装同样支持碳溯源示意，让每一份礼物都更有温度与责任感。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [MODULE] m3n_图片展示部分 -->
+      <section class="py-20 bg-white" id="gallery">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              牛油果图片展示
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              欣赏我们家乡牛油果的美丽图片，从果园到餐桌的全过程
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="牛油果果园"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0bc0e0780ced4287915ee68633f31fd5.png"
+              />
+            </div>
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="采摘牛油果"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/0242ef6077d3004e742b0a4ff2801cd4.png"
+              />
+            </div>
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="收获的牛油果"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/1aaa766152c8c2cb7f10c91cacedefe2.png"
+              />
+            </div>
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="成熟的牛油果"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/f345257c7a9862114ccfca957be4c31b.png"
+              />
+            </div>
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="切开的牛油果"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/39bf7929dcbd83f0f8516d888f4b7acd.png"
+              />
+            </div>
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="牛油果切片"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/c755b8a397a3d9d953d411e3ff1a6971.png"
+              />
+            </div>
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="牛油果吐司"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/9d21456c44171f947a16f7710c838f14.png"
+              />
+            </div>
+            <div
+              class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer group"
+            >
+              <img
+                alt="牛油果沙拉"
+                class="w-full h-48 object-cover group-hover:scale-110 transition-custom duration-500"
+                src="https://design.gemcoder.com/staticResource/echoAiSystemImages/147245d0ec4696a0f674c222a951073b.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] m3n_图片展示部分 -- 展示牛油果从果园到餐桌的各种图片，包括果园、采摘、收获、成熟果实、切开的牛油果和牛油果料理 -->
+      <section class="py-20 bg-white" id="about-vision">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              愿景与社会影响
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              推动民族地区共同富裕，以生态优先、绿色发展为导向，提升农民收入，守护山水林田湖草生命共同体。
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <article class="bg-gray-50 rounded-2xl p-8 shadow-sm text-center">
+              <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-avocado/10">
+                <i class="fas fa-leaf text-avocado text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">生态保护</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                以碳汇为抓手，促进植被恢复与生境改善，让牛油果林成为守护西南生态安全的重要屏障。
+              </p>
+            </article>
+            <article class="bg-gray-50 rounded-2xl p-8 shadow-sm text-center">
+              <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-avocado/10">
+                <i class="fas fa-hand-holding-usd text-avocado text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">增收共富</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                通过绿色产业链与品牌化运营，让更多民族地区农户稳定增收、持续就业，真正实现从“输血”到“造血”。
+              </p>
+            </article>
+            <article class="bg-gray-50 rounded-2xl p-8 shadow-sm text-center">
+              <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-avocado/10">
+                <i class="fas fa-users text-avocado text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">民族文化</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                以产品为载体，讲好傣族、拉祜族、佤族等民族故事，把可持续理念与民族文化一起传递给更多消费者。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-gray-50" id="involved">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              公益参与与碳积分
+            </h2>
+            <div class="w-24 h-1 bg-avocado mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              购买孟连牛油果即可积累碳积分，支持生态修复、公益捐赠与民族文化传承，让每一份消费都更有意义。
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">如何参与</h3>
+              <ol class="space-y-3 text-gray-700 text-sm list-decimal list-inside">
+                <li>选购零碳牛油果，获取对应碳积分。</li>
+                <li>扫码查看碳溯源，了解每一分碳汇贡献的去向。</li>
+                <li>将积分用于支持公益项目或参与绿色行动示意。</li>
+              </ol>
+              <div class="mt-6">
+                <a
+                  href="#products"
+                  class="inline-flex items-center bg-avocado hover:bg-avocado-dark text-white text-sm font-medium py-3 px-6 rounded-full transition-custom shadow"
+                >
+                  开始选购（示意）
+                </a>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">扫码示意</h3>
+              <div class="w-40 h-40 mb-4 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://design.gemcoder.com/staticResource/echoAiSystemImages/39bf7929dcbd83f0f8516d888f4b7acd.png"
+                  alt="扫码示意二维码"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="text-gray-600 text-sm">
+                扫码即可查看产品碳足迹与产地信息示意，未来可进一步接入真实碳积分系统。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [MODULE] o4p_联系我们部分 -->
+      <section class="py-20 bg-gray-50" id="contact">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+            <div class="flex flex-col lg:flex-row">
+              <div
+                class="lg:w-1/2 bg-avocado-dark p-8 md:p-12 flex flex-col justify-between"
+              >
+                <div>
+                  <h2 class="text-3xl font-bold text-white mb-6">联系我们</h2>
+                  <p class="text-avocado-light mb-8">
+                    如需了解项目或合作事宜，欢迎通过以下方式与我们联系，我们会尽快回复。
+                  </p>
+                  <div class="space-y-6">
+                    <div class="flex items-start">
+                      <div
+                        class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                      >
+                        <i class="fas fa-map-marker-alt text-white"> </i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-semibold mb-1">地址</h4>
+                        <p class="text-avocado-light">
+                          中国南方牛油果种植基地，气候适宜区
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <div
+                        class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                      >
+                        <i class="fas fa-phone text-white"> </i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-semibold mb-1">电话</h4>
+                        <p class="text-avocado-light">+86 123 4567 8910</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <div
+                        class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                      >
+                        <i class="fas fa-envelope text-white"> </i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-semibold mb-1">邮箱</h4>
+                        <p class="text-avocado-light">
+                          info@hometown-avocado.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8"></div>
+              </div>
+              <div class="lg:w-1/2 p-8 md:p-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">
+                  发送消息
+                </h3>
+                <form class="space-y-6" id="contact-form">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        for="name"
+                      >
+                        姓名
+                      </label>
+                      <input
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-avocado focus:border-avocado transition-custom"
+                        id="name"
+                        name="name"
+                        placeholder="您的姓名"
+                        required
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        for="email"
+                      >
+                        邮箱
+                      </label>
+                      <input
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-avocado focus:border-avocado transition-custom"
+                        id="email"
+                        name="email"
+                        placeholder="您的邮箱"
+                        required
+                        type="email"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      for="subject"
+                    >
+                      主题
+                    </label>
+                    <input
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-avocado focus:border-avocado transition-custom"
+                      id="subject"
+                      name="subject"
+                      placeholder="消息主题"
+                      required
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      for="message"
+                    >
+                      消息内容
+                    </label>
+                    <textarea
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-avocado focus:border-avocado transition-custom"
+                      id="message"
+                      name="message"
+                      placeholder="请输入您的消息内容..."
+                      required
+                      rows="5"
+                    >
+                    </textarea>
+                  </div>
+                  <div>
+                    <button
+                      class="w-full bg-avocado hover:bg-avocado-dark text-white font-medium py-3 px-6 rounded-lg transition-custom transform hover:scale-[1.02]"
+                      type="submit"
+                    >
+                      发送消息
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- [/MODULE] o4p_联系我们部分 -- 提供联系信息和消息发送表单，包含地址、电话、邮箱和工作时间等信息 -->
+    </main>
+    <!-- [MODULE] q5r_页脚 -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <div class="flex items-center mb-6">
+              <i class="fas fa-seedling text-avocado text-2xl mr-2"> </i>
+              <span class="text-xl font-bold"> 家乡牛油果 </span>
+            </div>
+            <p class="text-gray-400 mb-6">
+              我们致力于以孟连牛油果为载体，将生态碳汇、民族共富与健康消费串联起来，让每一次选择都成为一次"碳索共富"的参与。
+            </p>
+            <div class="flex space-x-4">
+              <a
+                class="text-gray-400 hover:text-avocado transition-custom"
+                href="javascript:void(0);"
+              >
+                <i class="fab fa-weixin"> </i>
+              </a>
+              <a
+                class="text-gray-400 hover:text-avocado transition-custom"
+                href="javascript:void(0);"
+              >
+                <i class="fab fa-weibo"> </i>
+              </a>
+              <a
+                class="text-gray-400 hover:text-avocado transition-custom"
+                href="javascript:void(0);"
+              >
+                <i class="fab fa-instagram"> </i>
+              </a>
+              <a
+                class="text-gray-400 hover:text-avocado transition-custom"
+                href="javascript:void(0);"
+              >
+                <i class="fab fa-youtube"> </i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">快速链接</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="#overview"
+                >
+                  概述
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="#features"
+                >
+                  特点
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="#nutrition"
+                >
+                  营养价值
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="#recipes"
+                >
+                  食谱
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="#gallery"
+                >
+                  图片展示
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="#contact"
+                >
+                  联系我们
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">相关资源</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="javascript:void(0);"
+                >
+                  牛油果种植技术
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="javascript:void(0);"
+                >
+                  牛油果健康研究
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="javascript:void(0);"
+                >
+                  牛油果市场动态
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="javascript:void(0);"
+                >
+                  有机农业实践
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-400 hover:text-avocado transition-custom"
+                  href="javascript:void(0);"
+                >
+                  可持续发展
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">订阅我们</h4>
+            <p class="text-gray-400 mb-4">
+              订阅我们的电子邮件，获取最新的牛油果资讯和优惠信息。
+            </p>
+            <form class="mb-4">
+              <div class="flex">
+                <input
+                  class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800"
+                  placeholder="您的邮箱地址"
+                  type="email"
+                />
+                <button
+                  class="bg-avocado hover:bg-avocado-dark text-white px-4 py-2 rounded-r-lg transition-custom"
+                  type="submit"
+                >
+                  <i class="fas fa-paper-plane"> </i>
+                </button>
+              </div>
+            </form>
+            <p class="text-gray-500 text-sm">
+              我们尊重您的隐私，不会向第三方分享您的信息。
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 text-sm mb-4 md:mb-0">
+              © 2023 家乡牛油果. 保留所有权利.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                class="text-gray-500 hover:text-gray-400 text-sm"
+                href="javascript:void(0);"
+              >
+                隐私政策
+              </a>
+              <a
+                class="text-gray-500 hover:text-gray-400 text-sm"
+                href="javascript:void(0);"
+              >
+                使用条款
+              </a>
+              <a
+                class="text-gray-500 hover:text-gray-400 text-sm"
+                href="javascript:void(0);"
+              >
+                网站地图
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- [/MODULE] q5r_页脚 -- 包含网站导航、相关资源链接、订阅表单和版权信息 -->
+    <!-- [MODULE] s6t_食谱模态框 -->
+    <div
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+      id="recipe-modal"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-70"
+        id="modal-overlay"
+      ></div>
+      <div
+        class="relative bg-white rounded-lg shadow-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto m-4 transform transition-custom scale-95 opacity-0"
+        id="modal-content"
+      >
+        <button
+          class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 z-10"
+          id="close-modal"
+        >
+          <i class="fas fa-times text-xl"> </i>
+        </button>
+        <div class="p-6 md:p-8" id="modal-body">
+          <!-- 模态框内容将通过JavaScript动态加载 -->
+        </div>
+      </div>
+    </div>
+    <!-- [/MODULE] s6t_食谱模态框 -- 用于展示详细食谱信息的弹出窗口 -->
+    <!-- [MODULE] u7v_图片查看器 -->
+    <div
+      class="fixed inset-0 z-50 flex items-center justify-center hidden"
+      id="image-viewer"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-90"
+        id="viewer-overlay"
+      ></div>
+      <button
+        class="absolute top-6 right-6 text-white hover:text-gray-300 z-10"
+        id="close-viewer"
+      >
+        <i class="fas fa-times text-2xl"> </i>
+      </button>
+      <button
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+        id="prev-image"
+      >
+        <i class="fas fa-chevron-left text-3xl"> </i>
+      </button>
+      <button
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+        id="next-image"
+      >
+        <i class="fas fa-chevron-right text-3xl"> </i>
+      </button>
+      <div class="relative max-w-5xl w-full max-h-[80vh]">
+        <img
+          alt="图片预览"
+          class="max-w-full max-h-[80vh] mx-auto"
+          id="viewer-image"
+          src
+        />
+      </div>
+    </div>
+    <!-- [/MODULE] u7v_图片查看器 -- 用于放大查看图片的全屏查看器 -->
+    <!-- [MODULE] w8x_联系表单提交成功提示 -->
+    <div
+      class="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform translate-y-20 opacity-0 transition-custom flex items-center z-50"
+      id="success-toast"
+    >
+      <i class="fas fa-check-circle mr-2"> </i>
+      <span> 消息发送成功！我们会尽快与您联系。 </span>
+    </div>
+    <!-- [/MODULE] w8x_联系表单提交成功提示 -- 表单提交成功后的提示消息 -->
+    <!-- [JSMOD] y9z_导航栏滚动效果 -->
+    <script id="navbar-script">
+      // 导航栏滚动效果
+      document.addEventListener('DOMContentLoaded', function () {
+        var navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 50) {
+            navbar.classList.add('bg-gray-900', 'shadow-md');
+            navbar.classList.remove('bg-transparent');
+          } else {
+            navbar.classList.remove('bg-gray-900', 'shadow-md');
+            navbar.classList.add('bg-transparent');
+          }
+        });
+
+        // 移动端菜单切换
+        var menuToggle = document.getElementById('menu-toggle');
+        var mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // 关闭移动菜单（如果打开）
+            if (!mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+            var targetId = this.getAttribute('href');
+            var targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <!-- [/JSMOD] y9z_导航栏滚动效果 -- 实现导航栏滚动时的样式变化、移动端菜单切换和平滑滚动 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script id="carbon-calc-script">
+      // 碳汇计算交互
+      document.addEventListener('DOMContentLoaded', function () {
+        var minusBtn = document.getElementById('minusBtn');
+        var plusBtn = document.getElementById('plusBtn');
+        var numInput = document.getElementById('avocadoNum');
+        var calcBtn = document.getElementById('calcBtn');
+        var resultBox = document.getElementById('carbonResult');
+        var carbonValue = document.getElementById('carbonValue');
+        var treeEquiv = document.getElementById('treeEquiv');
+
+        if (!numInput) return;
+
+        function setVal(v) {
+          var n = v | 0;
+          if (n < 1) n = 1;
+          numInput.value = n;
+        }
+
+        if (minusBtn) {
+          minusBtn.addEventListener('click', function () {
+            var current = parseInt(numInput.value, 10) || 1;
+            setVal(current - 1);
+          });
+        }
+
+        if (plusBtn) {
+          plusBtn.addEventListener('click', function () {
+            var current = parseInt(numInput.value, 10) || 1;
+            setVal(current + 1);
+          });
+        }
+
+        numInput.addEventListener('input', function () {
+          // 仅允许数字，且最小为1
+          numInput.value = numInput.value.replace(/[^0-9]/g, '');
+          if (numInput.value === '' || parseInt(numInput.value, 10) < 1) {
+            numInput.value = '1';
+          }
+        });
+
+        if (calcBtn) {
+          calcBtn.addEventListener('click', function () {
+            var n = parseInt(numInput.value, 10) || 1;
+            var carbon = (n * 2.3).toFixed(1);
+            var tree = (n * 2.3 / 200).toFixed(2);
+            if (carbonValue) {
+              carbonValue.textContent = carbon + ' kg';
+            }
+            if (treeEquiv) {
+              treeEquiv.textContent = tree;
+            }
+            if (resultBox) {
+              resultBox.classList.remove('hidden');
+              resultBox.style.opacity = 0;
+              requestAnimationFrame(function () {
+                resultBox.style.transition = 'opacity .4s';
+                resultBox.style.opacity = 1;
+              });
+            }
+          });
+        }
+      });
+    </script>
+    <script id="carbon-map-chart-script">
+      // 碳足迹地图 Chart.js 环形图
+      document.addEventListener('DOMContentLoaded', function () {
+        var el = document.getElementById('carbonMapChart');
+        if (!el || typeof Chart === 'undefined') return;
+        var ctx = el.getContext('2d');
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: ['娜允镇（35%）', '勐马镇（25%）', '公信乡（18%）', '富岩镇（12%）', '芒信镇（10%）'],
+            datasets: [
+              {
+                label: '碳汇量占比',
+                data: [35, 25, 18, 12, 10],
+                backgroundColor: [
+                  'rgba(139,195,74,0.9)',
+                  'rgba(139,195,74,0.7)',
+                  'rgba(139,195,74,0.55)',
+                  'rgba(139,195,74,0.4)',
+                  'rgba(139,195,74,0.3)'
+                ],
+                borderColor: 'rgba(255,255,255,0.9)',
+                borderWidth: 3,
+                hoverOffset: 10
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: window.innerWidth < 768 ? '45%' : '55%',
+            plugins: {
+              legend: { position: 'bottom' },
+              title: {
+                display: true,
+                text: '孟连县各区域碳汇分布'
+              }
+            }
+          }
+        });
+      });
+    </script>
+    <!-- [JSMOD] a0b_营养成分图表 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <script id="nutrition-chart-script">
+      // 营养成分图表
+      document.addEventListener('DOMContentLoaded', function () {
+        // 初始化图表
+        function initNutritionChart() {
+          var chartDom = document.getElementById('nutrition-chart');
+          if (!chartDom) return;
+          var myChart = echarts.init(chartDom);
+          var option = {
+            tooltip: {
+              trigger: 'item',
+              formatter: '{a} <br/>{b}: {c} ({d}%)'
+            },
+            legend: {
+              orient: 'vertical',
+              left: 10,
+              data: ['健康脂肪', '碳水化合物', '膳食纤维', '蛋白质', '维生素和矿物质']
+            },
+            series: [{
+              name: '营养成分',
+              type: 'pie',
+              radius: ['40%', '70%'],
+              avoidLabelOverlap: false,
+              itemStyle: {
+                borderRadius: 10,
+                borderColor: '#fff',
+                borderWidth: 2
+              },
+              label: {
+                show: false,
+                position: 'center'
+              },
+              emphasis: {
+                label: {
+                  show: true,
+                  fontSize: 16,
+                  fontWeight: 'bold'
+                }
+              },
+              labelLine: {
+                show: false
+              },
+              data: [{
+                value: 14.7,
+                name: '健康脂肪',
+                itemStyle: {
+                  color: '#8BC34A'
+                }
+              }, {
+                value: 8.5,
+                name: '碳水化合物',
+                itemStyle: {
+                  color: '#CDDC39'
+                }
+              }, {
+                value: 6.7,
+                name: '膳食纤维',
+                itemStyle: {
+                  color: '#4CAF50'
+                }
+              }, {
+                value: 2,
+                name: '蛋白质',
+                itemStyle: {
+                  color: '#2E7D32'
+                }
+              }, {
+                value: 3.1,
+                name: '维生素和矿物质',
+                itemStyle: {
+                  color: '#1B5E20'
+                }
+              }]
+            }]
+          };
+          myChart.setOption(option);
+
+          // 监听窗口大小变化，调整图表大小
+          window.addEventListener('resize', function () {
+            myChart.resize();
+          });
+        }
+
+        // 初始化图表
+        initNutritionChart();
+      });
+    </script>
+    <!-- [/JSMOD] a0b_营养成分图表 -- 使用echarts绘制牛油果营养成分饼图 -->
+    <!-- [JSMOD] c1d_食谱模态框 -->
+    <script id="recipe-modal-script">
+      // 食谱模态框功能
+      document.addEventListener('DOMContentLoaded', function () {
+        var recipeModal = document.getElementById('recipe-modal');
+        var modalContent = document.getElementById('modal-content');
+        var modalBody = document.getElementById('modal-body');
+        var modalOverlay = document.getElementById('modal-overlay');
+        var closeModal = document.getElementById('close-modal');
+        var recipeButtons = document.querySelectorAll('.recipe-btn');
+
+        // 食谱数据
+        var recipes = {
+          toast: {
+            title: '经典牛油果吐司',
+            image: 'https://design.gemcoder.com/staticResource/echoAiSystemImages/11e5a1698d20225dfac26eae97718751.png',
+            prepTime: '10分钟',
+            servings: '1人份',
+            ingredients: ['全麦面包 2片', '牛油果 1个（成熟）', '盐 少许', '黑胡椒 少许', '红辣椒片 适量（可选）', '柠檬汁 几滴（可选）', '芝麻 少许（可选）'],
+            instructions: ['将面包片烤至金黄色酥脆。', '牛油果对半切开，去核，用勺子将果肉挖出放入碗中。', '加入少许盐和黑胡椒，用叉子轻轻捣碎成泥状（保留一些块状口感更佳）。', '将牛油果泥均匀涂抹在烤好的面包上。', '根据个人喜好撒上红辣椒片、芝麻，滴几滴柠檬汁提味。', '立即享用，可搭配煎蛋或番茄片增加风味。'],
+            tips: '选择成熟但不过软的牛油果，轻轻按压有轻微弹性的最佳。如果牛油果太硬，可以放入纸袋中加一个香蕉或苹果，加速成熟。'
+          },
+          salad: {
+            title: '牛油果沙拉',
+            image: 'https://design.gemcoder.com/staticResource/echoAiSystemImages/525afa266055403572f4f9432d6cf9a3.png',
+            prepTime: '15分钟',
+            servings: '2人份',
+            ingredients: ['牛油果 1个（成熟）', '混合生菜 100克', '樱桃番茄 10个，对半切', '黄瓜 1根，切片', '红洋葱 1/4个，切丝', '菲达奶酪 50克，切块', '橄榄油 2汤匙', '柠檬汁 1汤匙', '蜂蜜 1茶匙', '盐和黑胡椒 适量', '新鲜香草（如香菜、罗勒）少许（可选）'],
+            instructions: ['将生菜洗净沥干，放入大碗中。', '牛油果对半切开，去核，切成小块。', '加入樱桃番茄、黄瓜片、红洋葱丝和菲达奶酪。', '制作调味汁：将橄榄油、柠檬汁、蜂蜜、盐和黑胡椒混合均匀。', '将调味汁淋在沙拉上，轻轻拌匀。', '撒上新鲜香草（如果使用），立即食用。'],
+            tips: '牛油果容易氧化变黑，切好后可以滴几滴柠檬汁防止变色。沙拉调味汁最好在食用前才淋在沙拉上，以保持食材的新鲜度和脆度。'
+          },
+          smoothie: {
+            title: '牛油果奶昔',
+            image: 'https://design.gemcoder.com/staticResource/echoAiSystemImages/ab8066c5b09a104e8e16f9e799999a1d.png',
+            prepTime: '5分钟',
+            servings: '1人份',
+            ingredients: ['牛油果 1/2个（成熟）', '香蕉 1根，冷冻', '菠菜 1杯', '牛奶 1杯（可使用杏仁奶、豆奶等植物奶）', '希腊酸奶 1/4杯（可选）', '蜂蜜或枫糖浆 1-2茶匙（根据口味）', '冰块 适量'],
+            instructions: ['将牛油果对半切开，去核，挖出果肉。', '将牛油果果肉、冷冻香蕉、菠菜、牛奶和希腊酸奶（如果使用）放入搅拌机中。', '加入蜂蜜或枫糖浆调味。', '加入适量冰块，搅拌至顺滑。', '倒入玻璃杯中，可在表面装饰牛油果片和薄荷叶。', '立即饮用。'],
+            tips: '使用冷冻香蕉可以使奶昔更加浓稠冰凉，无需添加过多冰块。如果喜欢更稀的质地，可以多加一些牛奶。根据个人口味调整甜味，也可以加入可可粉制作巧克力牛油果奶昔。'
+          }
+        };
+
+        // 打开模态框
+        function openModal() {
+          recipeModal.classList.remove('hidden');
+          setTimeout(function () {
+            modalContent.classList.remove('scale-95', 'opacity-0');
+            modalContent.classList.add('scale-100', 'opacity-100');
+          }, 10);
+          document.body.style.overflow = 'hidden';
+        }
+
+        // 关闭模态框
+        function closeModalFunc() {
+          modalContent.classList.remove('scale-100', 'opacity-100');
+          modalContent.classList.add('scale-95', 'opacity-0');
+          setTimeout(function () {
+            recipeModal.classList.add('hidden');
+            document.body.style.overflow = '';
+          }, 300);
+        }
+
+        // 加载食谱内容
+        function loadRecipe(recipeId) {
+          var recipe = recipes[recipeId];
+          if (!recipe) return;
+          modalBody.innerHTML = "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\n            <div>\n              <img src=\"".concat(recipe.image, "\" alt=\"").concat(recipe.title, "\" class=\"w-full h-64 md:h-full object-cover rounded-lg shadow-md\">\n              <div class=\"grid grid-cols-2 gap-4 mt-4\">\n                <div class=\"bg-gray-50 p-3 rounded-lg text-center\">\n                  <p class=\"text-sm text-gray-500 mb-1\">\u51C6\u5907\u65F6\u95F4</p>\n                  <p class=\"font-medium\">").concat(recipe.prepTime, "</p>\n                </div>\n                <div class=\"bg-gray-50 p-3 rounded-lg text-center\">\n                  <p class=\"text-sm text-gray-500 mb-1\">\u4EFD\u91CF</p>\n                  <p class=\"font-medium\">").concat(recipe.servings, "</p>\n                </div>\n              </div>\n            </div>\n            <div>\n              <h3 class=\"text-2xl font-bold text-gray-800 mb-4\">").concat(recipe.title, "</h3>\n              <div class=\"mb-6\">\n                <h4 class=\"text-lg font-semibold text-gray-800 mb-2\">\u98DF\u6750</h4>\n                <ul class=\"space-y-2\">").concat(recipe.ingredients.map(function (ingredient) {
+            return "<li class=\"flex items-start\">\n                      <i class=\"fas fa-check-circle text-avocado mt-1 mr-2\"></i>\n                      <span>".concat(ingredient, "</span>\n                    </li>");
+          }).join(''), "</ul>\n              </div>\n              <div class=\"mb-6\">\n                <h4 class=\"text-lg font-semibold text-gray-800 mb-2\">\u5236\u4F5C\u6B65\u9AA4</h4>\n                <ol class=\"space-y-3\">").concat(recipe.instructions.map(function (instruction, index) {
+            return "<li class=\"flex\">\n                      <span class=\"flex-shrink-0 w-6 h-6 bg-avocado text-white rounded-full flex items-center justify-center mr-3\">".concat(index + 1, "</span>\n                      <span>").concat(instruction, "</span>\n                    </li>");
+          }).join(''), "</ol>\n              </div>\n              <div class=\"bg-avocado/5 p-4 rounded-lg border-l-4 border-avocado\">\n                <h4 class=\"font-semibold text-gray-800 mb-2\">\u5C0F\u8D34\u58EB</h4>\n                <p class=\"text-gray-700 text-sm\">").concat(recipe.tips, "</p>\n              </div>\n            </div>\n          </div>");
+          openModal();
+        }
+
+        // 事件监听
+        recipeButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var recipeId = button.getAttribute('data-recipe');
+            loadRecipe(recipeId);
+          });
+        });
+        closeModal.addEventListener('click', closeModalFunc);
+        modalOverlay.addEventListener('click', closeModalFunc);
+
+        // 按ESC键关闭模态框
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && !recipeModal.classList.contains('hidden')) {
+            closeModalFunc();
+          }
+        });
+      });
+    </script>
+    <!-- [/JSMOD] c1d_食谱模态框 -- 实现点击食谱按钮后显示详细食谱信息的模态框功能 -->
+    <!-- [JSMOD] e2f_图片查看器 -->
+    <script id="image-viewer-script">
+      // 图片查看器功能
+      document.addEventListener('DOMContentLoaded', function () {
+        var imageViewer = document.getElementById('image-viewer');
+        var viewerImage = document.getElementById('viewer-image');
+        var viewerOverlay = document.getElementById('viewer-overlay');
+        var closeViewer = document.getElementById('close-viewer');
+        var prevImageBtn = document.getElementById('prev-image');
+        var nextImageBtn = document.getElementById('next-image');
+        var galleryItems = document.querySelectorAll('.gallery-item');
+        var images = Array.from(galleryItems).map(function (item) {
+          return item.querySelector('img').src;
+        });
+        var currentImageIndex = 0;
+
+        // 打开图片查看器
+        function openViewer(index) {
+          currentImageIndex = index;
+          viewerImage.src = images[currentImageIndex];
+          imageViewer.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+
+        // 关闭图片查看器
+        function closeViewerFunc() {
+          imageViewer.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+
+        // 显示上一张图片
+        function showPrevImage() {
+          currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+          viewerImage.src = images[currentImageIndex];
+        }
+
+        // 显示下一张图片
+        function showNextImage() {
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          viewerImage.src = images[currentImageIndex];
+        }
+
+        // 事件监听
+        galleryItems.forEach(function (item, index) {
+          item.addEventListener('click', function () {
+            openViewer(index);
+          });
+        });
+        closeViewer.addEventListener('click', closeViewerFunc);
+        viewerOverlay.addEventListener('click', closeViewerFunc);
+        prevImageBtn.addEventListener('click', showPrevImage);
+        nextImageBtn.addEventListener('click', showNextImage);
+
+        // 按ESC键关闭查看器
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && !imageViewer.classList.contains('hidden')) {
+            closeViewerFunc();
+          }
+
+          // 左右箭头导航
+          if (!imageViewer.classList.contains('hidden')) {
+            if (e.key === 'ArrowLeft') {
+              showPrevImage();
+            } else if (e.key === 'ArrowRight') {
+              showNextImage();
+            }
+          }
+        });
+      });
+    </script>
+    <!-- [/JSMOD] e2f_图片查看器 -- 实现点击图片后全屏查看图片的功能，支持左右切换 -->
+    <!-- [JSMOD] g3h_联系表单 -->
+    <script id="contact-form-script">
+      // 联系表单处理
+      document.addEventListener('DOMContentLoaded', function () {
+        var contactForm = document.getElementById('contact-form');
+        var successToast = document.getElementById('success-toast');
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          // 在实际应用中，这里会有AJAX请求发送表单数据到服务器
+          // 模拟表单提交成功
+          setTimeout(function () {
+            // 重置表单
+            contactForm.reset();
+
+            // 显示成功提示
+            successToast.classList.remove('translate-y-20', 'opacity-0');
+            successToast.classList.add('translate-y-0', 'opacity-100');
+
+            // 3秒后隐藏提示
+            setTimeout(function () {
+              successToast.classList.remove('translate-y-0', 'opacity-100');
+              successToast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+          }, 1000);
+        });
+      });
+    </script>
+    <!-- [/JSMOD] g3h_联系表单 -- 实现联系表单的提交处理和成功提示功能 -->
+  </body>
+</html>
